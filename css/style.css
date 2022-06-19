@@ -113,6 +113,10 @@ img {
 .hero * {
   z-index: 10;
 }
+
+.hero.blog {
+  background: url('../images/blog/blog.jpg') no-repeat center center/cover;
+}
 /* Icons */
 .icons {
   padding: 30px;
@@ -247,4 +251,32 @@ img {
 
 .footer a:hover {
   color: #28a745;
+}
+
+/* Mobile */
+
+@media(max-width: 780px){
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 30px;
+  }
+  
+  .flex-items {
+    flex-direction: column;
+  }
+  
+  .flex-columns .column, .flex-grid .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  .team img {
+    width: 70%;
+  }
 }
